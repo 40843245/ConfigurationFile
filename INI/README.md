@@ -18,8 +18,18 @@ We use RE to represent the syntax.
 
       <name> := <identifier>
 
+      <value> := (<string>|<number>|<bool>)
+
+where 
+
       <identifier> := <alpha>(<underscore>|<alpha>)*
 
+      <string> := \"(<alpha>|<underscore>)+\"
+      
+      <number> := (<digit>)+
+
+      <bool> := (True|False)
+      
       <underscore> := _
 
       <alpha> := (<uppercase>|<lowercase>)
@@ -27,6 +37,8 @@ We use RE to represent the syntax.
       <uppercase> := [A-Z]
 
       <lowercase> := [a-z]
+
+      <digit> := [0-9]
 
 ### section
 
