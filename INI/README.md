@@ -84,6 +84,8 @@ Sometimes, it refers the single-line comment.
 
       #
 
+Semicolons (;) at the beginning of the line indicate a comment. Comment lines are ignored.
+
 ## Escape character
 
 The letter '\' is escaped character.
@@ -92,3 +94,9 @@ The letter '\' is escaped character.
 https://en.wikipedia.org/wiki/INI_file
 
 https://www.w3schools.io/file/ini-example-cheatsheet/
+
+## Additional Reference
+StackOverflow:
+
+https://stackoverflow.com/questions/1378219/do-standard-windows-ini-files-allow-comments
+##
