@@ -84,7 +84,15 @@ Sometimes, it refers the single-line comment.
 
       #
 
-Semicolons (;) at the beginning of the line indicate a comment. Comment lines are ignored.
+NOTICE
+      
+      Comment lines are ignored.
+
+      ; at the beginning of the line indicate a comment. 
+
+      # is strongly not recommended.
+
+
 
 ## Escape character
 
