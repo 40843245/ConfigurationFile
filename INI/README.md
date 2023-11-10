@@ -90,3 +90,5 @@ The letter '\' is escaped character.
 
 ## Ref
 https://en.wikipedia.org/wiki/INI_file
+
+https://www.w3schools.io/file/ini-example-cheatsheet/
