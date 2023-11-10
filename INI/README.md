@@ -35,10 +35,26 @@ A file extension of configuration file.
     
     [.subsection]
     foo = bar
-    
-
-    
+        
 ## Principle
 ### Case-senstivity
 
 "Section" is not equivalent to "section"
+
+## Comments
+### Single-line comment
+
+The symbol refers the single-line comment.
+      
+      ;
+
+Sometimes, it refers the single-line comment.
+
+      #
+
+## Escape character
+
+The letter '\' is escaped character.
+
+## Ref
+https://en.wikipedia.org/wiki/INI_file
