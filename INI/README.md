@@ -106,5 +106,12 @@ https://www.w3schools.io/file/ini-example-cheatsheet/
 ## Additional Reference
 StackOverflow:
 
+It talks about comments.
+
 https://stackoverflow.com/questions/1378219/do-standard-windows-ini-files-allow-comments
-##
+
+Python Official Docs:
+
+It talks about the Python module -- configparser.
+
+https://docs.python.org/3/library/configparser.html
