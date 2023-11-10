@@ -8,6 +8,26 @@ A file extension of configuration file.
       
        <name> = <value>
 
+       where 
+       
+       <name> refers the variable name, it is a kind of indentifier <identifier> (defined below).
+
+RE (Regular expression) 
+
+We use RE to represent the syntax.
+
+      <name> := <identifier>
+
+      <identifier> := <alpha>(<underscore>|<alpha>)*
+
+      <underscore> := _
+
+      <alpha> := (<uppercase>|<lowercase>)
+
+      <uppercase> := [A-Z]
+
+      <lowercase> := [a-z]
+
 ### section
 
      With [] annotation.
