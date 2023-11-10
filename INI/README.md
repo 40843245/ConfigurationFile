@@ -1,6 +1,23 @@
 # .ini
 ## Intro
-A file extension of configuration file.
+A file extension of configuration file. 
+
+A configuration file stores including:
+
+Property of the setting.
+
+It is loaded every time before the task starts to be executed.
+
+For example,
+
+Desktop.ini:
+
+It stores the settings about Desktop, which is loaded every time after the computer or notebook etc finishes to be powered on.
+
+The common use of it: 
+
+Assign icon or thumbnail of folder.
+
 ## Syntax
 ### key-value pair
 
@@ -22,17 +39,23 @@ We use RE to represent the syntax.
 
       <key> := <identifier>
 
-      <value> := (<string>|<number>|<bool>)
+      <value> := <consideredAsString>
 
 where 
 
       <identifier> := <alpha>(<underscore>|<alpha>)*
-
-      <string> := \"(<alpha>|<underscore>)+\"
+      
+      <consideredAsString> := (<string_w>|<number_w>|<bool_w>)
+      
+      <string_w> := <string>(<whitespace><string)+
+      
+      <string> := ((\"(<alpha>|<underscore>)+\")
       
       <number> := (<digit>)+
 
       <bool> := (True|False)
+
+      <whitespace> := ' '
       
       <underscore> := _
 
@@ -43,6 +66,12 @@ where
       <lowercase> := [a-z]
 
       <digit> := [0-9]
+
+#### NOTICE 
+
+NOTICE that
+
+a number or a bool in <value> are considered as a string in .ini.
 
 ### section
 
@@ -107,8 +136,6 @@ The letter dollar sign '$' is also an escaped character. It is usually used to e
 Such as 
 
       cost: $$80
-
-
 
 ## Ref
 https://en.wikipedia.org/wiki/INI_file
