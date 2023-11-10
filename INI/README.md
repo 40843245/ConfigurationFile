@@ -39,10 +39,10 @@ We use RE to represent the syntax.
 
       <key> := <identifier>
 
-      <value> := <consideredAsString>
+      <value> := (<consideredAsString>|<None>)
 
 where 
-
+      
       <identifier> := <alpha>(<underscore>|<alpha>)*
       
       <consideredAsString> := (<string_w>|<number_w>|<bool_w>)
@@ -67,11 +67,23 @@ where
 
       <digit> := [0-9]
 
+      <None> := ''
+
 #### NOTICE 
 
 NOTICE that
 
-a number or a bool in <value> are considered as a string in .ini.
+1. a number or a bool in <value> are considered as a string in .ini.
+2. a value may be multilined.
+
+![image](https://github.com/40843245/ConfigurationFile/assets/75050655/ef9933a1-8e17-4177-9c10-4d9b51fa771c)
+
+3. a value can no None (or exactly said, a key can have no value.)
+
+
+4. sections can be indented.
+
+![image](https://github.com/40843245/ConfigurationFile/assets/75050655/1ebff0ca-c544-42bd-9c9b-5ddaaa440969)
 
 ### section
 
@@ -133,9 +145,11 @@ The letter slash '\' is an escaped character (to espace the letter that has spec
 
 The letter dollar sign '$' is also an escaped character. It is usually used to escape the character '$' or to represent a variable.
 
-Such as 
 
-      cost: $$80
+The letter percentage '% is also an escaped character.
+ 
+
+
 
 ## Ref
 https://en.wikipedia.org/wiki/INI_file
