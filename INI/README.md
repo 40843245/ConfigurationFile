@@ -2,21 +2,25 @@
 ## Intro
 A file extension of configuration file.
 ## Syntax
-### name-value pair
+### key-value pair
 
-      The <name> will be set to <value>
+The <key> will be set to <value>. With the following syntax:
       
-       <name> = <value>
+       <key> = <value>
 
-       where 
+or
+
+      <key> : <value>
+      
+where 
        
-       <name> refers the variable name, it is a kind of indentifier <identifier> (defined below).
+       <key> refers the variable name, it is a kind of indentifier <identifier> (defined below).
 
 RE (Regular expression) 
 
 We use RE to represent the syntax.
 
-      <name> := <identifier>
+      <key> := <identifier>
 
       <value> := (<string>|<number>|<bool>)
 
@@ -68,13 +72,15 @@ where
     [.subsection]
     foo = bar
         
-## Principle
+## General Principles
 ### Case-senstivity
+
+Such as 
 
 "Section" is not equivalent to "section"
 
-## Comments
-### Single-line comment
+### Comments
+#### Single-line comment
 
 The symbol refers the single-line comment.
       
@@ -92,11 +98,17 @@ NOTICE
 
       # is strongly not recommended.
 
+### Escaped character
+
+The letter slash '\' is an escaped character (to espace the letter that has special meaning).
+
+The letter dollar sign '$' is also an escaped character. It is usually used to escape the character '$' or to represent a variable.
+
+Such as 
+
+      cost: $$80
 
 
-## Escape character
-
-The letter '\' is escaped character.
 
 ## Ref
 https://en.wikipedia.org/wiki/INI_file
